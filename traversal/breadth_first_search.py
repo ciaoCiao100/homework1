@@ -74,6 +74,7 @@ def generic_bfs_edges(G, source, neighbors=None, depth_limit=None):
     .. _Depth-limited-search: https://en.wikipedia.org/wiki/Depth-limited_search
     """
     visited = {source}
+    print (source)
     if depth_limit is None:
         depth_limit = len(G)
     queue = deque([(source, depth_limit, neighbors(source))])
